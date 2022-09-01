@@ -23,4 +23,8 @@ export class RecipeService {
   getRecipes(){
     return this.recipes;
   }
+
+  getRecipe(id : number){
+    return this.recipes[id-1]
+  }
 }
